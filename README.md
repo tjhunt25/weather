@@ -45,6 +45,7 @@ I used axios too request data because it has easy error handling and makes code 
 
 In regards to conversions (compassConverter & Fairenheight) I decided to use a function to do so as I thought it would be less taxing than making another request.
 
+Please ignore 'added lat and long too dependency in useState' it should have been useEffect*
 
 ## Assumptions
 I decided to keep the API key open, however, if this were production code I would have created a .ENV file for it too be hidden.  

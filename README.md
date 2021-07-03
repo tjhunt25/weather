@@ -35,19 +35,21 @@ Afterwards start the server using npm start
 
 By using React I am able to seperate different components of the app making it easier to create user interfaces. Seperating components also makes it easier for scalability in future. 
 
-I had used hooks since are also able to write cleaner components because you don't have to search for various this.setState everywhere.
+I had used hooks because they are a new feature of react. You also able to write cleaner components because you don't have to search for various this.setState within the application.
 
-Components for the application were used in a seperate folder called 'components' for best practice. 
+Components for the application were used in a seperate folder called 'components' for best practice.
 
 After doing some research, using the navigator.geolocation was quite simple too implement.
 
-I used axios too request data because it has easy error handling and makes code more readable as you don't have to parse the response to json 
+I used axios too request data because it has easy error handling and makes code more readable as you don't have to parse the response to json. 
 
 In regards to conversions (compassConverter & Fairenheight) I decided to use a function to do so as I thought it would be less taxing than making another request.
 
 
 ## Assumptions
-I decided to keep the API key open, however, if this were production code I would have created an ENV file fore it too be hidden.  
+I decided to keep the API key open, however, if this were production code I would have created a .ENV file for it too be hidden.  
+
+I changed the titles of the widget assuming it was just a placeholder.  
 
 For the title of the location I made it so that the value of the input is displayed while the user is typing. I also did this because there was no submit button.  
 

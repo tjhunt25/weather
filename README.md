@@ -23,9 +23,8 @@ React: v 17.0.2
 ## Installation and Usage
 This is a basic projected created with npx create-react-app. To get started you can directly clone the repository.
 
-
 cd weatherApp
-
+npm install 
 Install dependancies 
 
 Afterwards start the server using npm start

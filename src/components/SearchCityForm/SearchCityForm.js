@@ -5,7 +5,7 @@ const SearchCityForm = ({ setRadio, setSearchCity, searchCity, radio }) => {
     <>
       <form>
         <div>
-          <p>{searchCity ? `City: ${searchCity}` : `City Name:`}</p>
+          <p>{searchCity ? `City: ${searchCity}` : `City:`}</p>
 
           <input
             type="text"

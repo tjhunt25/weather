@@ -35,13 +35,14 @@ function App() {
         setCity(res.data.name);
         setWindDegrees(res.data.wind.deg);
         setWindSpeed(res.data.wind.speed);
+        console.log(res)
       } catch (err) {
         console.error(err);
       }
     };
     fetchWeather();
     // eslint-disable-next-line
-  }, [searchCity]);
+  }, [searchCity, latitude, longitude]);
 
   return (
     <div className="wrapper">

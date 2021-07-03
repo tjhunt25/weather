@@ -1,52 +1,52 @@
-import React from 'react';
-import './SearchCityForm.css'
-const SearchCityForm = ({setRadio, setSearchCity, searchCity, radio}) => {
-    return (
-        <>
-         <form>
-            <div>
-              <p>{searchCity ? searchCity : "Title"}</p>
+import React from "react";
+import "./SearchCityForm.css";
+const SearchCityForm = ({ setRadio, setSearchCity, searchCity, radio }) => {
+  return (
+    <>
+      <form>
+        <div>
+          <p>{searchCity ? `City: ${searchCity}` : `City Name:`}</p>
 
+          <input
+            type="text"
+            placeholder="Search For A City"
+            onChange={(e) => {
+              setSearchCity(e.target.value);
+            }}
+          />
+        </div>
+
+        <div className="tempflex">
+          <p>Temperature</p>
+          <div className="tempRadioWrapper">
+            <div>
+              <label>&#176;C</label>
               <input
-                type="text"
-                placeholder="Search For A City"
+                type="radio"
+                checked={radio === "c"}
+                value="c"
                 onChange={(e) => {
-                  setSearchCity(e.target.value);
+                  setRadio(e.target.value);
                 }}
               />
             </div>
 
-            <div className="tempflex">
-              <p>Temperature</p>
-              <div className="tempRadioWrapper">
-                <div>
-                  <label>&#176;C</label>
-                  <input
-                    type="radio"
-                    checked={radio === "c"}
-                    value="c"
-                    onChange={(e) => {
-                      setRadio(e.target.value);
-                    }}
-                  />
-                </div>
-
-                <div>
-                  <label>&#176;F</label>
-                  <input
-                    type="radio"
-                    checked={radio === "F"}
-                    value="F"
-                    onChange={(e) => {
-                      setRadio(e.target.value);
-                    }}
-                  />
-                </div>
-              </div>
+            <div>
+              <label>&#176;F</label>
+              <input
+                type="radio"
+                checked={radio === "F"}
+                value="F"
+                onChange={(e) => {
+                  setRadio(e.target.value);
+                }}
+              />
             </div>
-          </form>   
-        </>
-    );
+          </div>
+        </div>
+      </form>
+    </>
+  );
 };
 
 export default SearchCityForm;
